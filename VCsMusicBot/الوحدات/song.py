@@ -22,7 +22,7 @@ from VCsMusicBot.config import DURATION_LIMIT
 from VCsMusicBot.modules.play import arq
 
 
-@Client.on_message(filters.command("بحث") & ~filters.channel)
+@Client.on_message(filters.command("song") & ~filters.channel)
 def song(client, message):
 
     user_id = message.from_user.id
